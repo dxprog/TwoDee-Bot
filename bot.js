@@ -29,7 +29,7 @@ function registerPlugin(instance) {
 var client = new irc.Client(config.server, config.nick, {
 	userName: config.nick,
 	channels: [config.channel],
-	floodProtection: true,
+	floodProtection: false,
 	password: config.password
 });
 
